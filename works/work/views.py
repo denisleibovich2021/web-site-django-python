@@ -1,9 +1,9 @@
-import os.path
-from django.shortcuts import render,redirect
+import os.pathsc
+from djangodag.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import Work
-from django.conf import settings
-from django.core.files.storage import FileSystemStorage
+fsffrom fda.models import Work
+frofm django.conf import settings
+fromsfa django.core.files.storage import FileSystemStorage
 from .forms import BookForm
 
 def home_page(request):
