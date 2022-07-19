@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 3px solid #009933;
+  overflow: hidden;
+  background-color:   #669999;
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+</style>
+
+<body>
+
+<ul>
+  <li><a href="{% url 'home' %}"><b>Home</b></a></li>
+
+  <li><a href="{% url 'contact' %}"><b>Contact</b></a></li>
+
+</ul>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+<div class="wrapper">
+
+
+
+
+<p>
+<img src="{% static 'me.jpeg' %}"  style="float:left;width:222px;height:222px;">
+<br><br><br>
+   <h2>&nbsp;&nbsp;<strong>Hello,&nbsp;my name is Denis Daniel Leibovich.<br>
+&nbsp;&nbsp;I am 28 years old from Bat Yam. &nbsp;&nbsp;<br>&nbsp;&nbsp;I would like to join as a junior in the field of &nbsp;&nbsp;development / automation / QA.<br>&nbsp;&nbsp;Waiting for a call : 053-3304844...</strong></h2>
+</p>
+<hr>
+<br>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

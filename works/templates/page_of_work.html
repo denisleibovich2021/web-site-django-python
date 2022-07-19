@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="page_of_work">
+    <div class="article">
+
+        <h2>Name Of Project : <b>{{article.title}}</b>&nbsp;&nbsp;</h2></td>
+
+        <h4>Explanation: {{article.body}}</h4>
+        <h3>Press
+        <a href="{{ article.rar_file.url }}" class="btn btn-primary btn-sm" target="_blank">Here</a> to Download Project</h3>
+        <img src="{{ article.thumb.url }}" width="410" height="410" ><h2><a href="{% url 'home' %}">Back</a> </h2>
+
+</div>
+
+{% endblock %}
+
+

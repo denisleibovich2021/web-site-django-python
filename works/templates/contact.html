@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+<h1> My Contact Information</h1>
+<h2>Denis Daniel Leibovich <br/><br>
+    I am from Bat-Yam, Israel<br/><br>
+    Phone Number : <a href="tel: 0533304844"> 0533304844</a><br/><br>
+    Email : <a href="mailto:Denisleibovich@gmail.com"> Denisleibovich@gmail.com</a><br/><br>
+    LinkedIn : <a href="https://www.linkedin.com/in/denisleibovich/">https://www.linkedin.com/in/denisleibovich/</a><br><br>
+    GitHub : <a href="https://github.com/leibovich2020">My GitHub</a>
+</h2>
+<br>
+
+<h2><a href="{% url 'home' %}">Back</a> </h2>
+{% endblock %}
+</body>
+</html>
